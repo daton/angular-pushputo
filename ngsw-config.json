@@ -13,16 +13,11 @@
           "/manifest.webmanifest",
           "/*.css",
           "/*.js"
-        ],
-        "versionedFiles":[
-          "/*.bundle.css",
-          "/*.bundle.js",
-          "/*.chunck.js"
         ]
       }
     }, {
       "name": "assets",
-      "installMode": "lazy",
+      "installMode": "prefetch",
       "updateMode": "prefetch",
       "resources": {
         "files": [
