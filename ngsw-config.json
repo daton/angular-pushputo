@@ -39,8 +39,20 @@
         "strategy": "freshness",
         "timeout": "7s",
         "maxSize":100,
-        "maxAge": "1d"
+        "maxAge": "1d",
+        "timeout": "3s"
 
+      }
+    },
+    {
+      "name": "from-api",
+      "version": 2,
+      "urls": ["/"],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 10,
+        "maxAge": "1h",
+        "timeout": "5s"
       }
     }
   ]
